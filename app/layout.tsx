@@ -24,9 +24,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
-        {children}
+    <html lang="pt-BR" className="scroll-smooth overflow-x-hidden">
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased overflow-x-hidden relative w-full`}>
+        <main className="overflow-x-hidden">
+          {children}
+        </main>
         <Analytics />
       </body>
     </html>
