@@ -35,7 +35,7 @@ export function Services() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation()
 
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-secondary">
+    <section id="servicos" className="py-24 lg:py-32 bg-primary/5">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div ref={headerRef} className="text-center max-w-2xl mx-auto">
@@ -77,9 +77,8 @@ function ServiceCard({
   return (
     <div
       ref={ref}
-      className={`group relative overflow-hidden rounded-2xl bg-card border border-border transition-all duration-700 hover:shadow-xl hover:-translate-y-2 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
-      }`}
+      className={`group relative overflow-hidden rounded-2xl bg-card border border-border transition-all duration-700 hover:shadow-xl hover:-translate-y-2 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
+        }`}
       style={{ transitionDelay: `${index * 150}ms` }}
     >
       {/* Image */}

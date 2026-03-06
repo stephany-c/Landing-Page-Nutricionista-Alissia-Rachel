@@ -30,7 +30,7 @@ export function Methodology() {
     const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation()
 
     return (
-        <section id="metodologia" className="py-24 lg:py-32 bg-secondary/50">
+        <section id="metodologia" className="py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Header */}
                 <div ref={headerRef} className="text-center max-w-2xl mx-auto mb-20">

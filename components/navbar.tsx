@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
-  { label: "Servicos", href: "#servicos" },
+  { label: "Serviços", href: "#servicos" },
+  { label: "Metodologia", href: "#metodologia" },
   { label: "Resultados", href: "#resultados" },
   { label: "Depoimentos", href: "#depoimentos" },
-  { label: "Contato", href: "#contato" },
 ]
 
 export function Navbar() {
@@ -25,8 +25,8 @@ export function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled
-          ? "bg-background/80 backdrop-blur-xl shadow-sm border-b border-border"
-          : "bg-transparent"
+        ? "bg-background/80 backdrop-blur-xl shadow-sm border-b border-border"
+        : "bg-transparent"
         }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
@@ -46,8 +46,8 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={`relative text-sm font-medium transition-colors after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full ${isScrolled
-                  ? "text-muted-foreground hover:text-foreground"
-                  : "text-primary-foreground/80 hover:text-primary-foreground"
+                ? "text-muted-foreground hover:text-foreground"
+                : "text-primary-foreground/80 hover:text-primary-foreground"
                 }`}
             >
               {link.label}

@@ -12,6 +12,7 @@ import { TargetAudience } from "@/components/target-audience"
 import { Differentials } from "@/components/differentials"
 import { Gallery } from "@/components/gallery"
 import { Results } from "@/components/results"
+import { WhatsappButton } from "@/components/whatsapp-button"
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
       <FAQ />
       <CTASection />
       <Footer />
+      <WhatsappButton />
     </main>
   )
 }

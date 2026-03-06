@@ -30,7 +30,7 @@ export function Differentials() {
     const { ref: sectionRef, isVisible } = useScrollAnimation()
 
     return (
-        <section id="diferenciais" className="py-24 lg:py-32 bg-primary/5">
+        <section id="diferenciais" className="py-24 lg:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="grid gap-16 lg:grid-cols-2 items-center">
                     <div ref={sectionRef}>

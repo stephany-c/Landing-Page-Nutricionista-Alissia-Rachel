@@ -30,7 +30,7 @@ export function TargetAudience() {
     const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation()
 
     return (
-        <section id="publico-alvo" className="py-24 lg:py-32">
+        <section id="publico-alvo" className="py-24 lg:py-32 bg-secondary/20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div ref={headerRef} className="text-center max-w-2xl mx-auto mb-16">
                     <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary transition-all duration-700 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>

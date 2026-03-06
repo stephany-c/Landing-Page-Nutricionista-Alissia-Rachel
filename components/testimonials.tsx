@@ -54,7 +54,7 @@ export function Testimonials() {
   const { ref: headerRef, isVisible: headerVisible } = useScrollAnimation()
 
   return (
-    <section id="depoimentos" className="py-24 lg:py-32 overflow-hidden">
+    <section id="depoimentos" className="py-24 lg:py-32 overflow-hidden bg-primary/5">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header */}
         <div ref={headerRef} className="text-center max-w-2xl mx-auto">
