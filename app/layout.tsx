@@ -10,21 +10,7 @@ export const metadata: Metadata = {
   title: 'Alissia Rachel | Nutricionista',
   description: 'Nutricionista em Belo Horizonte - MG. Atendimento presencial e online. Nutrição funcional e comportamental para transformar sua relação com a alimentação de forma leve e personalizada.',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/favicon.png',
   },
 }
 
