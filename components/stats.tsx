@@ -59,7 +59,7 @@ export function Stats() {
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <p className="text-4xl font-serif font-bold text-primary-foreground md:text-5xl">
+              <p className="text-4xl font-serif font-light text-primary-foreground md:text-5xl">
                 <AnimatedNumber target={stat.value} suffix={stat.suffix} isVisible={isVisible} />
               </p>
               <p className="mt-2 text-sm font-medium text-primary-foreground/70">

@@ -34,7 +34,7 @@ export function Navbar() {
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary transition-transform duration-300 group-hover:scale-110">
             <Heart className="h-5 w-5 text-primary-foreground" />
           </div>
-          <span className={`font-serif text-xl font-semibold tracking-tight transition-colors duration-500 ${isScrolled ? "text-foreground" : "text-primary-foreground"
+          <span className={`font-serif text-xl font-light tracking-tight transition-colors duration-500 ${isScrolled ? "text-foreground" : "text-primary-foreground"
             }`}>
             Alissia Rachel
           </span>

@@ -137,7 +137,7 @@ ${formData.message}`
             <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               Contato
             </span>
-            <h2 className={`mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            <h2 className={`mt-4 font-serif text-4xl font-light leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               <span className="text-balance">
                 Vamos conversar sobre sua{" "}
                 <span className="italic text-primary">saúde</span>?
@@ -205,7 +205,7 @@ ${formData.message}`
             className={`rounded-2xl bg-card border border-border p-8 lg:p-10 transition-all duration-700 ${formVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
               }`}
           >
-            <h3 className="text-xl font-serif font-bold text-foreground">
+            <h3 className="text-xl font-serif font-light text-foreground">
               Agende sua consulta
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">

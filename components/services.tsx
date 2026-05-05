@@ -42,7 +42,7 @@ export function Services() {
           <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary transition-all duration-700 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             Servicos
           </span>
-          <h2 className={`mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+          <h2 className={`mt-4 font-serif text-4xl font-light leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             <span className="text-balance">
               Uma abordagem completa para sua{" "}
               <span className="italic text-primary">saúde</span>
@@ -97,7 +97,7 @@ function ServiceCard({
 
       {/* Content */}
       <div className="p-6 lg:p-8">
-        <h3 className="text-xl font-serif font-bold text-foreground">
+        <h3 className="text-xl font-serif font-light text-foreground">
           {service.title}
         </h3>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">

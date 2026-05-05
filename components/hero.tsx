@@ -41,7 +41,7 @@ export function Hero() {
             </div>
 
             <h1
-              className={`mt-8 font-serif text-5xl font-bold leading-tight tracking-tight text-primary-foreground md:text-7xl lg:text-8xl transition-all duration-1000 delay-400 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+              className={`mt-8 font-serif text-5xl font-light leading-tight tracking-tight text-primary-foreground md:text-7xl lg:text-8xl transition-all duration-1000 delay-400 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
             >
               <span className="text-balance">
