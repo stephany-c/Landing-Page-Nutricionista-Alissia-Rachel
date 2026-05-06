@@ -129,21 +129,21 @@ ${formData.message}`
   }
 
   return (
-    <section id="contato" className="py-24 lg:py-32 bg-secondary">
+    <section id="contato" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-2 lg:gap-20">
           {/* Left - Info */}
           <div ref={ref}>
-            <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary-foreground/70 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               Contato
             </span>
-            <h2 className={`mt-4 font-serif text-4xl font-light leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            <h2 className={`mt-4 font-serif text-4xl font-light leading-tight tracking-tight text-primary-foreground md:text-5xl transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               <span className="text-balance">
                 Vamos conversar sobre sua{" "}
-                <span className="italic text-primary">saúde</span>?
+                <span className="italic text-accent">saúde</span>?
               </span>
             </h2>
-            <p className={`mt-6 text-lg leading-relaxed text-muted-foreground transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            <p className={`mt-6 text-lg leading-relaxed text-primary-foreground/80 transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               Agende sua consulta e dê o primeiro passo para uma vida
               mais saudável. Atendimento presencial e online.
             </p>
@@ -155,14 +155,14 @@ ${formData.message}`
                   href={item.href}
                   className="flex items-center gap-4 group"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground group-hover:scale-110">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary-foreground/10 text-primary-foreground transition-all duration-300 group-hover:bg-primary-foreground group-hover:text-primary group-hover:scale-110">
                     <item.icon className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                    <p className="text-xs font-medium text-primary-foreground/60 uppercase tracking-wider">
                       {item.label}
                     </p>
-                    <p className="text-sm font-semibold text-foreground">
+                    <p className="text-sm font-semibold text-primary-foreground">
                       {item.value}
                     </p>
                   </div>
@@ -176,7 +176,7 @@ ${formData.message}`
                 href="https://www.instagram.com/alissiarachel?igsh=bXJkOGk5enU3d3ht"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-110"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-primary-foreground/30 text-primary-foreground transition-all duration-300 hover:bg-primary-foreground hover:text-primary hover:border-primary-foreground hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4" />
@@ -185,7 +185,7 @@ ${formData.message}`
                 href="https://wa.me/5531999999999?text=Olá Alissia! Vi seu site e gostaria de agendar uma consulta."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground transition-all duration-300 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:scale-110"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-primary-foreground/30 text-primary-foreground transition-all duration-300 hover:bg-[#25D366] hover:text-white hover:border-[#25D366] hover:scale-110"
                 aria-label="WhatsApp"
               >
                 <svg

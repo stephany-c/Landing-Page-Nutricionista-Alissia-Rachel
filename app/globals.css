@@ -160,3 +160,16 @@
 .delay-1000 {
   animation-delay: 1000ms;
 }
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave {
+  animation: wave 15s linear infinite;
+}
