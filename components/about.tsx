@@ -42,7 +42,7 @@ export function About() {
             </div>
             {/* Floating card */}
             <div className="absolute -bottom-6 -left-6 rounded-2xl bg-card p-6 shadow-xl border border-border md:p-8">
-              <p className="text-4xl font-serif font-bold text-primary">+500</p>
+              <p className="text-4xl font-serif font-light text-primary">+500</p>
               <p className="mt-1 text-sm text-muted-foreground">
                 Pacientes atendidos
               </p>
@@ -54,7 +54,7 @@ export function About() {
             <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               Sobre mim
             </span>
-            <h2 className={`mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            <h2 className={`mt-4 font-serif text-4xl font-light leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
               <span className="text-balance">
                 Sua saúde merece uma{" "}
                 <span className="italic text-primary">atencao especial</span>

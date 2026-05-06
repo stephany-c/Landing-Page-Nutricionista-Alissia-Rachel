@@ -62,7 +62,7 @@ export function Results() {
                     <span className={`inline-block text-sm font-semibold tracking-widest uppercase text-primary transition-all duration-700 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
                         Resultados
                     </span>
-                    <h2 className={`mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+                    <h2 className={`mt-4 font-serif text-4xl font-light leading-tight tracking-tight text-foreground md:text-5xl transition-all duration-700 delay-100 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
                         Casos de <span className="italic text-primary">Sucesso</span>
                     </h2>
                     <p className={`mt-6 text-lg leading-relaxed text-muted-foreground transition-all duration-700 delay-200 ${headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
@@ -144,7 +144,7 @@ function ResultCard({
             </div>
 
             <div className="px-2 flex flex-col flex-grow">
-                <h3 className="text-xl font-serif font-bold text-foreground mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
+                <h3 className="text-xl font-serif font-light text-foreground mb-2 group-hover:text-primary transition-colors">{item.title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground flex-grow">{item.description}</p>
             </div>
         </div>

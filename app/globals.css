@@ -40,8 +40,8 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-inter), 'Geist', system-ui, sans-serif;
-  --font-serif: var(--font-playfair), 'Georgia', serif;
+  --font-sans: var(--font-lato), 'Lato', system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), 'Cormorant Garamond', 'Georgia', serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -89,4 +89,87 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-10px) translateX(-5px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(-25px) translateX(5px);
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float.delay-300 {
+  animation-delay: 300ms;
+}
+
+.animate-float.delay-500 {
+  animation-delay: 500ms;
+}
+
+.animate-float.delay-700 {
+  animation-delay: 700ms;
+}
+
+.animate-float.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 25s linear infinite;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-wave {
+  animation: wave 15s linear infinite;
 }

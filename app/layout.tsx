@@ -1,10 +1,18 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { Lato, Cormorant_Garamond } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const lato = Lato({ 
+  subsets: ["latin"], 
+  weight: ["300", "400", "700"],
+  variable: "--font-lato" 
+});
+const cormorant = Cormorant_Garamond({ 
+  subsets: ["latin"], 
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-cormorant" 
+});
 
 export const metadata: Metadata = {
   title: 'Alissia Rachel | Nutricionista',
@@ -25,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth overflow-x-hidden">
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased overflow-x-hidden relative w-full`}>
+      <body className={`${lato.variable} ${cormorant.variable} font-sans antialiased overflow-x-hidden relative w-full`}>
         <main className="overflow-x-hidden">
           {children}
         </main>

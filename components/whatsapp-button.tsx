@@ -16,7 +16,7 @@ export function WhatsappButton() {
             aria-label="Falar no WhatsApp"
         >
             <div className="hidden md:flex flex-col items-end opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <span className="bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl text-primary font-serif font-bold text-sm shadow-xl border border-primary/10">
+                <span className="bg-white/90 backdrop-blur-md px-4 py-2 rounded-2xl text-primary font-serif font-light text-sm shadow-xl border border-primary/10">
                     Agende sua consulta
                 </span>
             </div>

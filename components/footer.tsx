@@ -10,7 +10,7 @@ export function Footer() {
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary">
               <Heart className="h-4 w-4 text-primary-foreground" />
             </div>
-            <span className="font-serif text-lg font-semibold text-foreground">
+            <span className="font-serif text-lg font-light text-foreground">
               Alissia Rachel
             </span>
           </div>
