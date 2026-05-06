@@ -110,8 +110,8 @@ export function Navbar() {
                 }`}
               >
                 {link.label}
-                {/* Active indicator */}
-                <span className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-1 rounded-full bg-primary transition-all duration-300 ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} />
+                {/* Active indicator - underline */}
+                <span className={`absolute -bottom-1 left-4 right-4 h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent transition-all duration-300 ${isActive ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"}`} />
               </a>
             )
           })}
